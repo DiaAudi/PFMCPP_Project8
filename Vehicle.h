@@ -3,6 +3,7 @@
 #include <string>
 #include <iostream>
 
+struct HighwayPatrol;
 struct Vehicle
 {
     Vehicle(const std::string& n) : name(n) { }
@@ -28,3 +29,5 @@ protected:
 
     friend HighwayPatrol;
 };
+
+
