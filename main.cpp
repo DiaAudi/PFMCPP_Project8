@@ -146,14 +146,14 @@ int main()
         highway.addVehicle(&car);
     }
     
-    for (Motorcycle& mc : motorcycles)
+    for (Motorcycle& motorc : motorcycles)
     {
-        highway.addVehicle(&mc);
+        highway.addVehicle(&motorc);
     }
 
-    for (SemiTruck& st : trucks)
+    for (SemiTruck& semit : trucks)
     {
-        highway.addVehicle(&st);
+        highway.addVehicle(&semit);
     }
 
     
