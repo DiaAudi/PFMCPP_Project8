@@ -12,6 +12,7 @@ HighwayPatrol::HighwayPatrol() : Vehicle("HighwayPatrol")
 {
 
 }
+HighwayPatrol::~HighwayPatrol() = default;
 
 void HighwayPatrol::scanHighway(Highway* h)
 {
