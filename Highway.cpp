@@ -48,13 +48,13 @@ void Highway::removeVehicleInternal(Vehicle* v)
         car->tryToEvade();
     }
     else if (auto* motorcycle = dynamic_cast<Motorcycle*>(v))
-	{
+    {
         motorcycle->tryToEvade();
     }
 	else if (auto* semiTruck = dynamic_cast<SemiTruck*>(v))
     {
         semiTruck->pullOver();
-        }
+    }
 }
 
 void Highway::addVehicle(Vehicle* v)
