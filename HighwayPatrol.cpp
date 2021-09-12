@@ -45,12 +45,13 @@ void HighwayPatrol::pullOver( Vehicle* v, bool willArrest, Highway* h )
 	    }
 	    else if(auto* motorcycle = dynamic_cast<Motorcycle*>(v))
 	    {
-		    vehicleType = "motorcycle";
+            vehicleType = "motorcycle";
 	    }
 	    else if(auto* semiTruck = dynamic_cast<SemiTruck*>(v))
 	    {
-	    vehicleType = "truck";
+	        vehicleType = "truck";
 	    }
+        
         std::cout << name << ": YOU IN THE [ " << vehicleType << " ] PULL OVER AND SHOW YOUR HANDS" << std::endl;
         std::cout << "EVERYONE ELSE, SLOW DOWN!! \n\n\n";
         h->removeVehicle(v);
