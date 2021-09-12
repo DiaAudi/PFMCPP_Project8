@@ -24,14 +24,14 @@ void Highway::addVehicleInternal(Vehicle* v)
     {
         car->closeWindows();
 	}
-	else if (auto* motorcycle = dynamic_cast<Motorcycle*>(v))
-	{
+    else if (auto* motorcycle = dynamic_cast<Motorcycle*>(v))
+    {
         motorcycle->lanesplitAndRace();
-	}
-	else if (auto* semiTruck = dynamic_cast<SemiTruck*>(v))
-	{
-        semiTruck->laneChange();
-        }
+    }
+    else if (auto* semiTruck = dynamic_cast<SemiTruck*>(v))
+    {
+    semiTruck->laneChange();
+    }
 }
 
 void Highway::removeVehicleInternal(Vehicle* v)
